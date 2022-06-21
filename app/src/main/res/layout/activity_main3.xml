@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/otpbeforeimg"
+        android:layout_width="420dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/food_logo_gif"
+        android:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobileNumber"
+        android:layout_below="@id/otpbeforeimg"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Mobile Number :">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/teal_200"
+            android:inputType="phone"
+            android:drawableStart="@drawable/ic_baseline_dialpad_24"
+            android:layout_width="300dp"
+            android:layout_height="60dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/mobileNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="Email :">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/teal_200"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/getotpbtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Get Otp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@id/getotpbtn"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/circlefor_jpg" />
+
+
+
+</RelativeLayout>
+</ScrollView>

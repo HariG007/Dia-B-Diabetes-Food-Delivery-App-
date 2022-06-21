@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/afterotpimg"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/otpverification_gif" />
+
+    <TextView
+        android:id="@+id/otptxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/afterotpimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="OTP Verification"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/enterotptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otptxt2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter the OTP send to" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otptxt2"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="10dp"
+        android:text="Your Mail ID"
+        android:textColor="@color/teal_200" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otpedit_txt"
+        android:layout_below="@id/enterotptxt"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:outlineAmbientShadowColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Enter OTP :">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/teal_200"
+        android:inputType="phone"
+        android:digits="10"
+        android:drawableStart="@drawable/ic_baseline_security_24"
+        android:layout_width="300dp"
+        android:layout_height="60dp" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/resendtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpedit_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Resend OTP"
+        android:textColor="@color/teal_700"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="2dp"
+        android:foreground="@color/teal_700"
+        android:layout_below="@id/resendtxt"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/proceedbtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/otpedit_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Verify &amp; proceed" />
+
+
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicalDetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/Medical_detailstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gif1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:text="Medical Details"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/line_btn1"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/Medical_detailstxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:id="@+id/line_btn2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cardview5"
+            android:layout_width="400dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/diabetics_typetxt"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_btn1"
+            android:layout_marginLeft="55dp"
+            android:text="Type of Diabetics :"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/diabetics_typetxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/cardview1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_Medical_details"
+                android:layout_width="350dp"
+                app:cardMaxElevation="10dp"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/spinner_typeofdiabetics"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:dropDownWidth="350dp"
+                    android:dropDownSelector="@color/white"
+                    android:entries="@array/Type_of_diabetics"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/white"
+                    app:strokeColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview2"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/cardview1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/tv_sugarlevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Blood sugar level:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edittext_beforefasting"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/tv_sugarlevel"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:hint="Before Fasting :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:drawableStart="@drawable/ic_baseline_no_food_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/teal_200"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edittext_afterfasting"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/tv_sugarlevel"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="120dp"
+                android:gravity="center"
+                android:hint="After fasting :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/ic_baseline_fastfood_24"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/teal_200"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edittext_bp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/cardview2"
+                android:layout_centerHorizontal="true"
+                android:hint="Blood Pressure level :">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:drawablePadding="20dp"
+                    android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                    android:drawableTint="@color/teal_200"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edittext_height"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/edittext_bp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Height in (cm) :">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:drawableStart="@drawable/ic_baseline_height_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/teal_200"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edittext_weight"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/edittext_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Weight in (kg) :">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:drawableStart="@drawable/ic_baseline_monitor_weight_24"
+                android:drawablePadding="20dp"
+                android:drawableTint="@color/teal_200"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview5"
+            android:layout_width="400dp"
+            android:layout_height="190dp"
+            android:layout_below="@id/edittext_weight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/tv_allergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Allergies if any:"
+                android:textAppearance="@style/CardView"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_allergy"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tv_medicationtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_allergy"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:text="Medication Type:"
+                android:textAppearance="@style/CardView"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_typeofmedication"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edittext_allergy"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="75dp"
+                android:dropDownWidth="100dp"
+                android:entries="@array/Medication_Type"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/tv_Additional_diseases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_medicationtype"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140dp"
+                android:text="Additional diseases:"
+                android:textAppearance="@style/CardView"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_additionaldiseases"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spinner_typeofmedication"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="135dp"
+                android:dropDownWidth="100dp"
+                android:entries="@array/Additional_diseases"
+                android:spinnerMode="dropdown" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/proceedbtn"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/cardview5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Save and continue" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif1"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/_4903_health" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_doorno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_adress"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Door no:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextdoorno"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_doorno"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/tv_streetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextdoorno"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Street name:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editstreetname1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_streetname"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp">
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editstreetname1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="City:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_city"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_city"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/tv_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_city"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="District:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_district"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_district"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPostalAddress"/>
+
+        <TextView
+            android:id="@+id/tv_pincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_district"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:text="Pincode:"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edittext_pincode"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_pincode"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/location_gif" />
+
+        <TextView
+            android:id="@+id/tv_mapnavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_pincode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Or"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_location"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/edittext_pincode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Tag your location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_location"
+            android:id="@+id/tv_getaddress"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/proceedbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_navigate_next_24"
+            android:backgroundTint="@color/black"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:text="Next" />
+
+    </RelativeLayout>
+</ScrollView>
+

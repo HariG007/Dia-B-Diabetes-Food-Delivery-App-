@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/setpwsdimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/_5248_mailbox" />
+
+        <TextView
+            android:id="@+id/setpwsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setpwsdimg"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Set Password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setpwsd"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="User Name:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_below="@id/username"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/pwsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_username"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="New Password:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittxt2"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pwsd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/Confirmpwsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittxt2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Confirm Password:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittxt3"
+            android:layout_width="285dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/Confirmpwsd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/proceedbtn"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/edittxt3"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:text="Confirm"/>
+
+    </RelativeLayout>
+</ScrollView>

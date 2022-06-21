@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/schootergif"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/_9298_food_delivery" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/schootergif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="Don't Cook Just Eat "
+            android:textColor="@color/teal_200"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Order From Us Online "
+            android:textStyle="italic" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/foodspinnerimg"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="100dp"
+            android:layout_below="@id/txt2"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/_9276_loading_utensils" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/foodspinnerimg2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="250dp"
+            android:layout_below="@id/txt2"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/_9276_loading_utensils" />
+
+        <Button
+            android:id="@+id/proceedbtn"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/txt2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:outlineProvider="bounds"
+            android:text="Get Started"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:strokeColor="@color/black" />
+
+    </RelativeLayout>
+</ScrollView>

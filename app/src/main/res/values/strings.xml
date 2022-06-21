@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">DiaB</string>
+    <string name="version_2_0_4">Version 2.0.4</string>
+    <string name="next">Next</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_main6">MainActivity6</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="Gender">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+
+
+    </string-array>
+    <string-array name="spinner_bloodgroup">
+        <item>Select</item>
+        <item>O+ve</item>
+        <item>O-ve</item>
+        <item>A+ve</item>
+        <item>A-ve</item>
+        <item>B+ve</item>
+        <item>B-ve</item>
+        <item>AB+ve</item>
+        <item>AB-ve</item>
+        <item>Others</item>
+
+
+    </string-array>
+    <string-array name="Type_of_diabetics">
+        <item>Select</item>
+        <item>Type 1 diabetics</item>
+        <item>Type 2 diabetics</item>
+    </string-array>
+
+
+    <string-array name="Medication_Type">
+        <item>Select</item>
+        <item>Allopathy</item>
+        <item>Homeopathy</item>
+        <item>Ayurveda</item>
+        <item>Naturopathy</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="Additional_diseases">
+        <item>Select</item>
+        <item>Cardiac diseases</item>
+        <item>Hypertension</item>
+        <item>Kidney disorders</item>
+        <item>Hypertension</item>
+        <item>Cholestrol</item>
+        <item>Thyroid</item>
+        <item>PCOS</item>
+        <item>Depression/Loneliness</item>
+        <item>Sleep issues</item>
+    </string-array>
+
+
+    <string-array name="spinner_gender">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="Blood_group">
+        <item>Select</item>
+        <item>O+ve</item>
+        <item>O-ve</item>
+        <item>A+ve</item>
+        <item>A-ve</item>
+        <item>B+ve</item>
+        <item>B-ve</item>
+        <item>AB+ve</item>
+        <item>AB-ve</item>
+        <item>Others</item>
+
+
+    </string-array>
+    <string-array name="spinner_typeofdiabetics">
+        <item>Select</item>
+        <item>Type 1 diabetics</item>
+        <item>Type 2 diabetics</item>
+    </string-array>
+
+
+    <string-array name="spinner_typeofmedication">
+        <item>Select</item>
+        <item>Allopathy</item>
+        <item>Homeopathy</item>
+        <item>Ayurveda</item>
+        <item>Naturopathy</item>
+        <item name="android:background">@color/white</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinner_additionaldiseases">
+        <item>Select</item>
+        <item>Cardiac diseases</item>
+        <item>Hypertension</item>
+        <item>Kidney disorders</item>
+        <item>Hypertension</item>
+        <item>Cholestrol</item>
+        <item>Thyroid</item>
+        <item>PCOS</item>
+        <item>Depression/Loneliness</item>
+        <item>Sleep issues</item>
+    </string-array>
+
+</resources>

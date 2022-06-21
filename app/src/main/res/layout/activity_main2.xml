@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/videoView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/login_gif" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView2"
+        android:layout_marginLeft="20dp"
+        android:text="Log in"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumber"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Phone Number :">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/teal_200"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:layout_width="300dp"
+        android:layout_height="60dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_field"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Password :">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/teal_200"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:layout_width="300dp"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgetpwdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_input_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Forget Password ?"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/needtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="45dp"
+        android:text="Need an Account?"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/signintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="45dp"
+        android:text="SIGN UP"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="670dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Log in"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="----------------OR----------------"
+        android:textColor="@color/black" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="70dp"
+        android:layout_height="1mm"
+        android:layout_marginLeft="255dp"
+        android:progress="100"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@id/signintxt"/>
+ </RelativeLayout>
+</ScrollView>
